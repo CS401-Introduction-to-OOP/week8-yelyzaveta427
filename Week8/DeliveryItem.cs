@@ -2,8 +2,8 @@ namespace Week8;
 
 public abstract class DeliveryItem
 {
-    public string TrackingNumber { get; set; }
-    public double Weight { get; set; }
+    public string TrackingNumber { get;  }
+    public double Weight { get; }
 
     public DeliveryItem(string trackingNumber, double weight)
     {
@@ -15,6 +15,6 @@ public abstract class DeliveryItem
 
     public virtual void PrintInfo()
     {
-        Console.WriteLine($"{TrackingNumber} of item - weight {Weight} ");
+        Console.WriteLine($"{TrackingNumber} of item - weight {Weight} kg");
     }
 }
